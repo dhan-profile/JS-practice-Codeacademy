@@ -31,3 +31,20 @@ console.log('The value of powerLevel:', powerLevel);
 console.log('The value of multiplyMe:', multiplyMe); 
 console.log('The value of quarterMe:', quarterMe);
 
+// *********** INCREMENT & DECREMENT OPERATORS ************* //
+let gainedDollar = 3;
+let lostDollar = 50;
+
+gainedDollar++;
+lostDollar--;
+
+// *********** CONCATENATION OPERATOR ************* //
+var favoriteAnimal = "Dog";
+console.log('My favorite animal: ' +favoriteAnimal);
+
+// **************** String Interpolation ***************** //
+let myName = "Dhanush";
+let myCity = "Texas";
+console.log(`My name is ${myName}. My favorite city is ${myCity}`);
+
+// *********** typeof operator ************ //
