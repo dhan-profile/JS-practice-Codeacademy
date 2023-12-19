@@ -110,8 +110,23 @@ const rectangleArea = (width, height) => {
   let area = width * height;
   return area;
 };
-
+It’s important to be familiar with the multiple ways of writing functions because you will come across each of these when reading other JavaScript code.
 */
 
+const plantNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+// ***************** Concise Body ARROW FUNCTIONS **************** //
+
+const plantNeedsWater = (day) => {
+  return day === 'Wednesday' ? true : false;
+};
+// CAN BE WRITTEN AS:
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
 
 
