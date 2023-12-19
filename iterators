@@ -111,3 +111,10 @@ console.log(
   })
 );
 
+/*
+forEach() method will do something to each of the values in the array and return undefined.
+filter() method will return a new array with only those elements longer than 7 characters.
+reduce() method accepts an array containing multiple values and returns a single value.
+every() method will return a boolean value.
+map() method will return a new array of numbers returned from the function.
+*/
