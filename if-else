@@ -1,4 +1,49 @@
+/*
+values are falsy— or evaluate to false when checked as a condition? The list of falsy values includes:
+0
+Empty strings like "" or ''
+null which represent when there is no value at all
+undefined which represent when a declared variable lacks a value
+NaN, or Not a Number
+*/
+
+// ********** USING IF ********** //
 let sale = true;
 if(sale){
   console.log('Time to buy!');
 }
+
+// ********** USING ELSE ********** //
+let sale = true;
+
+sale = false;
+
+if(sale) {
+  console.log('Time to buy!');
+}
+else{
+  console.log('Time to wait for a sale.');
+}
+
+// ********** USING ELSE WITH CONDITION ********** //
+
+let hungerLevel = 7;
+if(hungerLevel > 7){
+  console.log('Time to eat!');
+}
+else{
+  console.log('We can eat later!');  
+}
+
+// ********** USING && || ! OPERATORS ********** //
+let mood = 'sleepy';
+let tirednessLevel = 6;
+
+if(mood === 'sleepy' && tirednessLevel > 8){
+  console.log('time to sleep');
+}
+else{
+  console.log('not bed time yet');
+}
+
+// ********** USING && || ! OPERATORS ********** //
