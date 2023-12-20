@@ -92,4 +92,38 @@ tinCan.beep();
 
 
 // ***************** Property Value Shorthand ******************* //
+const robotFactory = (model, mobile) => {
+  return {
+    model,    // SHORTHAND 
+    mobile,   // SHORTHAND 
+    beep() {
+      console.log('Beep Boop');
+    },
+  }
+};
+
+// To check that the property value shorthand technique worked:
+const newRobot = robotFactory('P-501', false)
+console.log(newRobot.model)
+console.log(newRobot.mobile)
+
+// ***************** Destructured Assignment ******************* //
+const robot = {
+  model: '1E78V2',
+  energyLevel: 100,
+  functionality: {
+    beep() {
+      console.log('Beep Boop');
+    },
+    fireLaser() {
+      console.log('Pew Pew');
+    },
+  }
+};
+//const functionality = robot.functionality; // THIS CAN B WRITTEN AS:
+const {functionality} = robot;
+functionality.beep();      // SINCE functionality = robot.functionality; ===> robot.functionality.beep() === functionality.beep();  
+
+
+// ***************** Destructured Assignment ******************* //
 
