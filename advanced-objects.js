@@ -154,7 +154,7 @@ const robot = {
 
 // What is missing in the following method call?
 const robotKeys = Object.keys(robot);
-
+// Object.keys() method is used to extract the keys of an object.
 console.log(robotKeys);
 
 // Declare robotEntries below this line:
