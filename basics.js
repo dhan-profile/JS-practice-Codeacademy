@@ -86,3 +86,15 @@ const myDog = {
   "friends": ["freeCodeCamp Campers"]
 };
 myDog.bark = "bow-wow"; // This adds 'bark' property to the class 'myDog'.
+
+
+// **************** Testing Objects for Properties ****************** //
+//To check if a property on a given object exists or not, you can use the .hasOwnProperty() method.
+function checkObj(obj, checkProp) {
+  if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
+}
+
