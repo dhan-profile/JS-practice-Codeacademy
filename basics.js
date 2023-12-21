@@ -190,3 +190,133 @@ function updateRecords(records, id, prop, value) {
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
 
 
+// **************** WHILE LOOP - ARRAYS ****************** //
+// Setup
+const myArray = [];
+// Only change code below this line
+let i=5; 
+while(i>=0) {
+myArray.push(i);
+i--;
+}
+
+
+// ****************FOR LOOP - ARRAYS ****************** //
+const myArray = [];
+for(let i=1; i<=5; i++){
+  myArray.push(i);
+}
+
+
+// **************** FOR LOOP ODD NUMBERS - ARRAYS ****************** //
+const myArray = [];
+for(let i=1; i<=10; i+=2){
+  myArray.push(i);
+}
+
+
+// **************** FOR LOOP ODD NUMBERS REVERSE - ARRAYS ****************** //
+const myArray = [];
+for(let i=9; i>=1; i-=2){
+  myArray.push(i);
+}
+
+
+// **************** Iterate Through an Array with a For Loop ****************** //
+const myArr = [2, 3, 4, 5, 6];
+var total = 0;
+for(let i=total; i<myArr.length; i++) {
+total += myArr[i];
+}
+
+
+// **************** Nesting For Loops ****************** //
+function multiplyAll(arr) {
+  let product = 1;
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+    product *= arr[i][j];
+  }
+}
+  return product;
+}
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+
+
+// **************** Iterate with JavaScript Do...While Loops ****************** //
+const myArray = [];
+let i = 10;
+do{
+  myArray.push(i);
+  i++;
+}while (i < 5);
+
+
+// **************** Replace Loops using Recursion ****************** //
+function sum(arr, n) {
+  if(n <= 0) {
+    return 0;
+  } else {
+    return sum(arr, n - 1) + arr[n - 1];
+  }
+}
+
+
+// **************** Objective using Recursion ****************** //
+function lookUpProfile(name, prop) {
+  for (let x = 0; x < contacts.length; x++) {
+    if (contacts[x].firstName === name) {
+      if (contacts[x].hasOwnProperty(prop)) {
+        return contacts[x][prop];
+      } else {
+        return "No such property";
+      }
+    }
+  }
+  return "No such contact";
+}
+
+
+// **************** Generate Random Whole Numbers ****************** //
+function randomWholeNum() {
+  return Math.floor(Math.random() * 10);
+}
+
+
+// **************** Generate Random Whole Numbers within RANGE ****************** //
+function randomRange(myMin, myMax) {
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin
+}
+
+
+// **************** Binary number ****************** //
+function convertToInteger(str) {
+return parseInt(str, 2);
+}
+convertToInteger("10011");
+
+
+// **************** Recursion with unshift() ****************** //
+function countdown(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const arr = countdown(n - 1);
+    arr.unshift(n);
+    return arr;
+  }
+}
+
+
+// **************** Use Recursion to Create a Range of Numbers ****************** //
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum < startNum) {
+    return [];
+  } else {
+    const numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
+  }
+}
+
+// END //
