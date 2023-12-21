@@ -76,3 +76,13 @@ function cc(card) {
 }
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+
+// **************** ADDING OBJECT PROPERTY ****************** //
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+myDog.bark = "bow-wow"; // This adds 'bark' property to the class 'myDog'.
