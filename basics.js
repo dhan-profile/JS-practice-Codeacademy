@@ -289,3 +289,34 @@ function randomRange(myMin, myMax) {
 }
 
 
+// **************** Binary number ****************** //
+function convertToInteger(str) {
+return parseInt(str, 2);
+}
+convertToInteger("10011");
+
+
+// **************** Recursion with unshift() ****************** //
+function countdown(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const arr = countdown(n - 1);
+    arr.unshift(n);
+    return arr;
+  }
+}
+
+
+// **************** Use Recursion to Create a Range of Numbers ****************** //
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum < startNum) {
+    return [];
+  } else {
+    const numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
+  }
+}
+
+// END //
