@@ -21,7 +21,7 @@ Dot notation is what you use when you know the name of the property you're tryin
 However, you can still use bracket notation on object properties without spaces.
 
 Here is a sample of using bracket notation to read an object's property:
-
+<code>
 const myObj = {
   "Space Name": "Kirk",
   "More Space": "Spock",
@@ -30,4 +30,6 @@ const myObj = {
 
 myObj["Space Name"];
 myObj['More Space'];
-myObj["NoSpace"];</p>
+myObj["NoSpace"];
+</code>
+</p>
