@@ -16,3 +16,18 @@ Variables which are declared without the let or const keywords are automatically
 <h3>OBJECTS</h3>
 <P>There are two ways to access the properties of an object: dot notation (.) and bracket notation ([]), similar to an array.
 Dot notation is what you use when you know the name of the property you're trying to access ahead of time.</P>
+<p>The second way to access the properties of an object is bracket notation ([]). If the property of the object you are trying to access has a space in its name, you will need to use bracket notation.
+
+However, you can still use bracket notation on object properties without spaces.
+
+Here is a sample of using bracket notation to read an object's property:
+
+const myObj = {
+  "Space Name": "Kirk",
+  "More Space": "Spock",
+  "NoSpace": "USS Enterprise"
+};
+
+myObj["Space Name"];
+myObj['More Space'];
+myObj["NoSpace"];</p>
