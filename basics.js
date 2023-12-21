@@ -98,3 +98,19 @@ function checkObj(obj, checkProp) {
   }
 }
 
+
+// **************** Accessing Nested Objects ****************** //
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+// To assign the value 'maps' in the object 'myStorage' 👇
+const gloveBoxContents = myStorage.car.inside["glove box"];
+
