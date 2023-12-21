@@ -190,3 +190,34 @@ function updateRecords(records, id, prop, value) {
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
 
 
+// **************** WHILE LOOP - ARRAYS ****************** //
+// Setup
+const myArray = [];
+// Only change code below this line
+let i=5; 
+while(i>=0) {
+myArray.push(i);
+i--;
+}
+
+
+// ****************FOR LOOP - ARRAYS ****************** //
+const myArray = [];
+for(let i=1; i<=5; i++){
+  myArray.push(i);
+}
+
+
+// **************** FOR LOOP ODD NUMBERS - ARRAYS ****************** //
+const myArray = [];
+for(let i=1; i<=10; i+=2){
+  myArray.push(i);
+}
+
+
+// **************** FOR LOOP ODD NUMBERS REVERSE - ARRAYS ****************** //
+const myArray = [];
+for(let i=9; i>=1; i-=2){
+  myArray.push(i);
+}
+
