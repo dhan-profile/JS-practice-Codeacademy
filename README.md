@@ -50,3 +50,4 @@ console.log(myBreed);
 </code>
 The string Doberman would be displayed in the console.
 </p>
+<p> You will need to place a comma after every object in the array, unless it is the last object in the array.</p>
