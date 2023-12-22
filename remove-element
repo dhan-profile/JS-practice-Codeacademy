@@ -1,0 +1,6 @@
+console.log("=======Elements After removing 2=========");
+    while(nums.includes(val)){
+        nums.splice(nums.indexOf(val), 1)
+        console.log(nums);
+    }
+var rem = removeElement([1,2,3,5,2,3],2);
